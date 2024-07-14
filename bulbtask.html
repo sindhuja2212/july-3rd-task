@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id = "image">
+    <button id="btnon">ON</button>
+    <button id="btnoff">OFF</button>
+    <script>
+        var a = document.getElementById("image")
+        var b = document.getElementById("btnon")
+        var c = document.getElementById("btnoff")
+
+        b.addEventListener("click",function(){
+            a.src="https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-320-80.jpg"
+            a.style.width="500px"
+        })
+        c.addEventListener("click",function(){
+            a.src="https://media.istockphoto.com/id/502789173/photo/light-bulb-concept.jpg?s=612x612&w=0&k=20&c=vJfSDuFJf_4UsQcUsdMNUfDkkNU6Bf9cTHF-n4-Zwvs="
+            a.style.width="400px"
+        })
+        
+    </script>
+</body>
+</html>

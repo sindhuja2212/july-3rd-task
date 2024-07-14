@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = [
+        {
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 3.9,
+      "count": 120
+    }
+}]
+
+      var divv = document.createElement("div")
+      document.body.appendChild(divv)
+
+      var a = document.createElement("h1")
+    a.innerText=data[0].title;
+
+    divv.appendChild(a)
+
+    var image = document.createElement("img")
+    image.src=data[0].image;
+    image.style.width="200px"
+    divv.appendChild(image)
+
+    var paragraph = document.createElement("p")
+    paragraph.innerText=data[0].description;
+    divv.appendChild(paragraph)
+
+
+    var btn = document.createElement("button")
+    btn.innerText="click to next page"
+    divv.appendChild(btn)
+    // btn.addEventListener("click",function(){
+    //     window.open("./index.html")
+    // })
+     btn.addEventListener("click",hello)
+
+     function hello(){
+        window.open("./fake2.html","_blank");
+     }
+    
+    
+      
+    </script>
+</body>
+</html>

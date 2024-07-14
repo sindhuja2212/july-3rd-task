@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var data =[
+    {
+    "id": 2,
+    "title": "Mens Casual Premium Slim Fit T-Shirts ",
+    "price": 22.3,
+    "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    }
+
+    ]
+
+    divv = document.createElement("div")
+    document.body.appendChild(divv)
+
+    var a = document.createElement("h1")
+    a.innerText=data[0].title
+     divv.appendChild(a)
+
+     var image = document.createElement("img")
+     image.src=data[0].image
+     image.style.width="200px"
+     divv.appendChild(image)
+
+     var des = document.createElement("p")
+     des.innerText=data[0].description
+     divv.appendChild(des)
+
+     var btn = document.createElement("button")
+     btn.innerText="click for next page"
+     divv.appendChild(btn)
+    
+     btn.addEventListener("click",hello)
+
+
+     function hello(){
+        window.open("./fake3.html","_blank")
+     
+      }
+
+  </script>
+</body>
+</html>
